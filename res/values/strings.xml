@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EfficienCy</string>
+    <string name="description">App to track the time spent on various apps on the device.</string>
+    <string name="action_settings">Settings</string>
+    <string name="refresh">refresh</string>
+    <string name="create_account">Create Account</string>
+    <string name="account_details">Account</string>
+    <string name="about">About</string>
+    <string name="reset">Reset</string>
+    <string name="setting1">Setting1</string>
+    <string name="setting1_summ">setting 1 summary</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="date_display">DD/MM/YYYY</string>
+    <string name="previous_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="title_activity_menu_settings">MenuSettings</string>
+    <string name="title_activity_about">About EfficienCy</string>
+    <string name="home">Home</string>
+    <string name="title_activity_settings_fragment">SettingsFragment</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_my_map">MyMapActivity</string>
+    <string name="map_button">View Map</string>
+    <string name="productivity_button">View Productivity</string>
+    <string name="productivity_text">Productivity rating: </string>
+    <string name="total_time_text">Total time on Device: </string>
+    <string name="title_activity_account">Account</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="title_activity_account2">Account2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="select_apps_to_track">Select Apps to Track</string>
+    <string name="title_activity_apps_to_track">Apps to Track</string>
+    <string name="group_names">James Saylor, Tom Atterbury, Niklas Jorve, Richard White</string>
+    <string name="group_names_title">Group Members: </string>
+    <string name="cyclones_logo">Cyclones Logo</string>
+    <string name="setting_first">First Setting</string>
+    <string name="refresh_data">Refresh</string>
+
+</resources>

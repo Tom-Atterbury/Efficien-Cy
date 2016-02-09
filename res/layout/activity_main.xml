@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:background="@drawable/iowa_state_background"
+
+    tools:context="com.coms309.efficiency_coms309_iastate.MainActivity" >
+
+    <TextView
+        android:id="@+id/date_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/date_display"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Previous_Button"
+        android:layout_marginStart="10dp"
+        android:text="@string/total_time_text"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp" />
+
+    <!-- android:layout_toRightOf="@+id/radio_group" -->
+    <!-- android:layout_below="@+id/Previous_Button" -->
+
+    <TextView
+        android:id="@+id/total_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Previous_Button"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/total_time"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    <!-- android:layout_below="@+id/Previous_Button" -->
+
+    <TextView
+        android:id="@+id/productivity_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_time"
+        android:layout_marginStart="10dp"
+        android:text="@string/productivity_text"
+        android:textColor="#FFFFFF"
+		android:layout_marginLeft="25dp"
+		android:textSize="20sp" />"
+    
+    <TextView 
+        android:id="@+id/productivity_rating_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_time"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/productivity_rating"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productivity_rating"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:checkedButton="@+id/day"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/day" />
+
+        <RadioButton
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/week" />
+
+        <RadioButton
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/month" />
+
+        <RadioButton
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/year" />
+    </RadioGroup>
+
+    <ExpandableListView
+        android:id="@+id/appList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group" >
+    </ExpandableListView>
+
+    <ImageButton
+        android:id="@+id/Previous_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/appList"
+        android:contentDescription="@string/previous_button"
+        android:onClick="prevData"
+        android:scaleType="centerCrop"
+        android:src="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/Next_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/appList"
+        android:contentDescription="@string/next_button"
+        android:onClick="nextData"
+        android:scaleType="centerCrop"
+        android:src="@drawable/next" />
+
+</RelativeLayout>

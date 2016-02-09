@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.coms309.efficiency_coms309_iastate.MainActivity" >
+
+        <item
+        android:id="@+id/refresh_data"
+        android:orderInCategory="100"
+        android:title="@string/refresh_data" />
+    
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="200"
+        android:title="@string/action_settings"
+        android:enabled="true"
+        />
+    
+    <item
+        android:id="@+id/account"
+        android:orderInCategory="300"
+        android:title="@string/account_details" />
+    
+    <item
+    	android:id="@+id/reset_system"
+    	android:orderInCategory="400"
+    	android:title="@string/reset" /> 
+    	   
+    <item
+        android:id="@+id/about_app"
+        android:orderInCategory="500"
+        android:title="@string/about"
+        android:enabled="true"/>
+    
+    <item
+        android:id="@+id/choose_user"
+        android:orderInCategory="600"
+    	android:title="Choose User" />
+    
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="700"
+        android:title="Share" />
+        
+    <item
+        android:id="@+id/reset_user"
+        android:orderInCategory="800"
+        android:title="Revert" />
+
+</menu>

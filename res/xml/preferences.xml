@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+    <PreferenceCategory
+        android:title="Main Preferences">
+        
+        <CheckBoxPreference 
+            android:id="@+id/pref"
+            android:key="pref1" 
+            android:title="@string/setting_first" />
+    
+	</PreferenceCategory>
+
+	<PreferenceCategory
+	    android:title="Alternate Preferences">
+	    
+	    
+	</PreferenceCategory>
+	<PreferenceScreen
+	    android:title="Select Apps to Track">
+		<CheckBoxPreference
+		    android:title="Setting1" />"
+		<CheckBoxPreference
+		    android:title="Setting2" />
+		
+		
+	</PreferenceScreen>
+	
+    
+
+</PreferenceScreen>

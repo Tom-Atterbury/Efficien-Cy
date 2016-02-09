@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="names_of_apps">
+    	<item>AppNames</item>
+	</string-array>
+    
+</resources>

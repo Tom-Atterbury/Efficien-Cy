@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#FAB909"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@+id/appIconDescription"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/list_parent_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/appIcon"
+        android:layout_toRightOf="@+id/appIcon"
+        android:layout_centerVertical="true"
+        android:minWidth="200dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingStart="10dp"
+        android:textColor="#C30C2A" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_relative"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/list_parent_relative"
+        android:layout_toLeftOf="@+id/percentage"
+        android:layout_toRightOf="@+id/list_parent_relative"
+        android:layout_toStartOf="@+id/percentage" />
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingEnd="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingStart="10dp"
+        android:textColor="#C30C2A" />
+
+</RelativeLayout>
